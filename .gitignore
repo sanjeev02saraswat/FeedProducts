@@ -1,3 +1,12 @@
 /coding/feed-products/feed.products.web.api/feed.products.web.api/Properties
 /coding/feed-products/feed.products.web.api/feed.products.web.api/bin
 /coding/feed-products/feed.products.web.api/feed.products.web.api/obj
+/coding/feed-products/feed.products.web.api/feed.products.application/*
+/coding/feed-products/feed.products.web.api/feed.products.Database/obj
+/coding/feed-products/feed.products.web.api/feed.products.Database/bin
+/coding/feed-products/feed.products.web.api/feed.products.DependencyInjection/bin
+/coding/feed-products/feed.products.web.api/feed.products.DependencyInjection/obj
+/coding/feed-products/feed.products.web.api/feed.products.Domain/bin
+/coding/feed-products/feed.products.web.api/feed.products.Domain/obj
+/coding/feed-products/feed.products.web.api/feed.products.Model/obj
+/coding/feed-products/feed.products.web.api/feed.products.Model/bin

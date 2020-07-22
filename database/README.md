@@ -19,7 +19,7 @@ SELECT first_name, last_name FROM users;
 
 1. Select users whose id is either 3,2 or 4
 - Please return at least: all user fields
-
+Ans: select * from users where id in (2,3,4);
 2. Count how many basic and premium listings each active user has
 - Please return at least: first_name, last_name, basic, premium
 
@@ -28,13 +28,13 @@ SELECT first_name, last_name FROM users;
 - Please return at least: first_name, last_name, basic, premium
 
 
-4. How much revenue has each active vendor made in 2013
+4. How much revenue has each active vendor made in 2013(consider active=1)
 - Please return at least: first_name, last_name, currency, revenue
-
+Ans: 
 
 5. Insert a new click for listing id 3, at $4.00
 - Find out the id of this new click. Please return at least: id
-
+Ans-insert into `clicks`(`listing_id`,`price`,`currency`,`created`) values(3,4,'USD','2020-09-15 16:18:43')
 
 6. Show listings that have not received a click in 2013
 - Please return at least: listing_name

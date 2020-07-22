@@ -1,0 +1,5 @@
+1. I have created one web api(.net core 2.0) that can contain multiple methods for any operation(called from angular web app for import data into database). As i am considering tha requirement , we have csv files from multiple client and have to upload the data into database.
+
+2. We are considering to migrate from MSsql to Mongo DB in future.(I am considering this requirment as well.)
+
+3. I have created one project for handling File data model and entities for database table model.
