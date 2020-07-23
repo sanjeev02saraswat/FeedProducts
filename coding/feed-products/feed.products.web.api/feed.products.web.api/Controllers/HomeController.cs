@@ -6,17 +6,16 @@ namespace feed_products.web.api.Controllers
     [ApiController]
     public class HomeController : ControllerBase
     {
-        //private IFeedApplication FeedApplication;
-        //public HomeController(IFeedApplication feedApplication)
-        //{
-        //    FeedApplication = feedApplication;
-        //}
+        private IFeedApplication FeedApplication;
+        public HomeController(IFeedApplication feedApplication)
+        {
+            FeedApplication = feedApplication;
+        }
         // GET api/values
         [HttpPost]
-        public ActionResult<bool> AddNewFeed()
+        public ActionResult<bool> AddNewFeed(List<ThirdPartyDataModelDTOs> thirdPartyDataModelDTOs)
         {
-            return true;
-           // return FeedApplication.
+            return FeedApplication.AddFeed(thirdPartyDataModelDTOs);
         }
         
     }
