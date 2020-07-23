@@ -1,4 +1,5 @@
 ﻿using feed.products.Database.Context;
+using feed.products.Database.Repostries;
 using Microsoft.EntityFrameworkCore.Storage;
 using System;
 using System.Collections.Generic;
@@ -8,9 +9,9 @@ namespace feed.products.Database.UnitOfWork
 {
     public class DatabaseUnitOfWork : IDatabaseUnitOfWork
     {
-        public DatabaseUnitOfWork()
+        public DatabaseUnitOfWork(IFeedRepository feed)
         {
-
+            Feed = feed;
         }
 
         DatabaseContext Context { get; set; }
@@ -35,5 +36,7 @@ namespace feed.products.Database.UnitOfWork
         {
             return Context.Database.BeginTransaction();
         }
+
+        public IFeedRepository Feed { get;  }
     }
 }

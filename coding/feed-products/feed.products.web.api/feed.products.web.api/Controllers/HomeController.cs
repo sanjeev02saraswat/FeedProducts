@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace feed_products.web.api.Controllers
 {
@@ -10,11 +6,17 @@ namespace feed_products.web.api.Controllers
     [ApiController]
     public class HomeController : ControllerBase
     {
+        //private IFeedApplication FeedApplication;
+        //public HomeController(IFeedApplication feedApplication)
+        //{
+        //    FeedApplication = feedApplication;
+        //}
         // GET api/values
         [HttpPost]
-        public ActionResult<IEnumerable<string>> AddNewFeed()
+        public ActionResult<bool> AddNewFeed()
         {
-            return new string[] { "value1", "value2" };
+            return true;
+           // return FeedApplication.
         }
         
     }

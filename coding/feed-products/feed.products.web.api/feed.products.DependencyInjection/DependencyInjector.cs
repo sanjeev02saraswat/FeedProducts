@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using feed.products.application;
+using feed.products.Domain;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using System;
@@ -21,11 +23,11 @@ namespace feed.products.DependencyInjection
 
             //for mongo db
             
-            Services.Configure<BookstoreDatabaseSettings>(
-                Configuration.GetSection(nameof(BookstoreDatabaseSettings)));
+            //Services.Configure<BookstoreDatabaseSettings>(
+            //    Configuration.GetSection(nameof(BookstoreDatabaseSettings)));
 
-            services.AddSingleton<IBookstoreDatabaseSettings>(sp =>
-                sp.GetRequiredService<IOptions<BookstoreDatabaseSettings>>().Value);
+            //services.AddSingleton<IBookstoreDatabaseSettings>(sp =>
+            //    sp.GetRequiredService<IOptions<BookstoreDatabaseSettings>>().Value);
         }
 
         public static void CreateDatabase<T>() where T : DbContext
@@ -48,7 +50,8 @@ namespace feed.products.DependencyInjection
 
         public static IServiceCollection RegisterServices(IServiceCollection services)
         {
-           
+            services.AddScoped<IFeedDomain, FeedDomain>();
+            services.AddScoped<IFeedApplication, FeedApplication>();
             //Add your Services before this.
             Services = services;
 

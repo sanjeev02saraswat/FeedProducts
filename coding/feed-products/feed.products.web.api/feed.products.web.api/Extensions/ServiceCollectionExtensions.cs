@@ -1,4 +1,4 @@
-﻿using feed.products.Database.Context;
+﻿//using feed.products.Database.Context;
 using feed.products.DependencyInjection;
 using feed.products.Model;
 using Microsoft.Extensions.Configuration;
@@ -17,8 +17,7 @@ namespace feed.products.web.api.Extensions
         {
             DependencyInjector.RegisterServices(services);
             DependencyInjector.AddDbContext<DatabaseContext>(Configuration.GetConnectionString(nameof(DataBaseContext)));
-            DependencyInjector.AddDbContext<DatabaseReadContext>(Configuration.GetConnectionString(nameof(DatabaseReadContext)));
-
+           
 
             //     services.Configure<BookstoreDatabaseSettings>(
             //Configuration.GetSection(nameof(BookstoreDatabaseSettings)));
@@ -38,4 +37,6 @@ namespace feed.products.web.api.Extensions
             return AppData;
         }
     }
+
+
 }

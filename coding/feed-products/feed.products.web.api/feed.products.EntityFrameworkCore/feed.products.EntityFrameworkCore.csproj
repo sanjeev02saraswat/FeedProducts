@@ -9,8 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\feed.products.EntityFrameworkCore\feed.products.EntityFrameworkCore.csproj" />
-    <ProjectReference Include="..\feed.products.Model\feed.products.Model.csproj" />
     <ProjectReference Include="..\feed.products.Utils\feed.products.Utils.csproj" />
   </ItemGroup>
 

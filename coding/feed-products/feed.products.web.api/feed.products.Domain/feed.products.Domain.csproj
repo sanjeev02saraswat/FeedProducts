@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\feed.products.Database\feed.products.Database.csproj" />
+    <ProjectReference Include="..\feed.products.Model\feed.products.Model.csproj" />
+  </ItemGroup>
+
 </Project>

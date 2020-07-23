@@ -10,3 +10,7 @@
 /coding/feed-products/feed.products.web.api/feed.products.Domain/obj
 /coding/feed-products/feed.products.web.api/feed.products.Model/obj
 /coding/feed-products/feed.products.web.api/feed.products.Model/bin
+/coding/feed-products/feed.products.web.api/feed.products.Utils/obj
+/coding/feed-products/feed.products.web.api/feed.products.Utils/bin
+/coding/feed-products/feed.products.web.api/feed.products.EntityFrameworkCore/obj
+/coding/feed-products/feed.products.web.api/feed.products.EntityFrameworkCore/bin

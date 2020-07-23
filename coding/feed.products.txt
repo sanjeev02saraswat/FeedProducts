@@ -3,3 +3,6 @@
 2. We are considering to migrate from MSsql to Mongo DB in future.(I am considering this requirment as well.)
 
 3. I have created one project for handling File data model and entities for database table model.
+4. i have used EF core for connection with MS sql server.we can write wrapper for Mongo db and inject Mongo db services for moving from MS Sql to Mongo db.
+
+5. I will create one angular web app for impoting csv data into database.That angular app will call to web api for inserting data into respecttive database.

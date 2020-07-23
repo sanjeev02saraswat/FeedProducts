@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "feed.products.application",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "feed.products.Domain", "feed.products.Domain\feed.products.Domain.csproj", "{9EBBCA86-F4CE-4E40-B22F-70A69DFFFFE4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "feed.products.Utils", "feed.products.Utils\feed.products.Utils.csproj", "{27B2FEEF-48A0-4F9D-A773-6392A15AA79C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "feed.products.EntityFrameworkCore", "feed.products.EntityFrameworkCore\feed.products.EntityFrameworkCore.csproj", "{FD9683AF-E595-47E6-88BB-BD4D9633BF83}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{9EBBCA86-F4CE-4E40-B22F-70A69DFFFFE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EBBCA86-F4CE-4E40-B22F-70A69DFFFFE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EBBCA86-F4CE-4E40-B22F-70A69DFFFFE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27B2FEEF-48A0-4F9D-A773-6392A15AA79C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27B2FEEF-48A0-4F9D-A773-6392A15AA79C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27B2FEEF-48A0-4F9D-A773-6392A15AA79C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27B2FEEF-48A0-4F9D-A773-6392A15AA79C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD9683AF-E595-47E6-88BB-BD4D9633BF83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD9683AF-E595-47E6-88BB-BD4D9633BF83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD9683AF-E595-47E6-88BB-BD4D9633BF83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD9683AF-E595-47E6-88BB-BD4D9633BF83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
